@@ -5,10 +5,10 @@
   <h1>🔍 AgentSpeakNews: Multiagent News Query System</h1>
 
   <p>
-    <img src="https://img.shields.io/badge/Python-3.x-blue" alt="Python">
-    <img src="https://img.shields.io/badge/SPADE-3.x-green" alt="SPADE">
-    <img src="https://img.shields.io/badge/Owlready2-2.x-yellow" alt="Owlready2">
-    <img src="https://img.shields.io/badge/Feedparser-6.x-orange" alt="Feedparser">
+    <img src="https://img.shields.io/badge/Python-3.12.9-blue" alt="Python">
+    <img src="https://img.shields.io/badge/SPADE-latest-green" alt="SPADE">
+    <img src="https://img.shields.io/badge/Owlready2-latest-yellow" alt="Owlready2">
+    <img src="https://img.shields.io/badge/Feedparser-latest-orange" alt="Feedparser">
   </p>
 </div>
 
