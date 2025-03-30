@@ -12,12 +12,12 @@
   </p>
 </div>
 
-![image](https://github.com/user-attachments/assets/6ff0ba82-659b-4eb1-9e39-497534b8e8de)
-
 ---
 
 ### 💡 Overview
 AgentSpeakNews es un sistema multiagente implementado en Python utilizando SPADE. La idea central es que un agente coordinador (Agente 1) se encarga de enviar una consulta de búsqueda a otros agentes especializados, cada uno consultando diferentes fuentes RSS de noticias. Cada agente busca en su feed aquellos artículos que contengan el término buscado y envía un resumen al coordinador, el cual presenta un resumen consolidado al usuario. ¡Y esto se puede ampliar fácilmente para incluir más fuentes o funcionalidades adicionales!
+
+![image](https://github.com/user-attachments/assets/6ff0ba82-659b-4eb1-9e39-497534b8e8de)
 
 ### 🗳 Features
 - **Arquitectura Multiagente:** Coordinación entre múltiples agentes para distribuir la búsqueda de noticias.
