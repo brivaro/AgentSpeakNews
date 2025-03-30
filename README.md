@@ -33,5 +33,5 @@ AgentSpeakNews es un sistema multiagente implementado en Python utilizando SPADE
 
 1. **Clonar el Repositorio:**
    ```bash
-   git clone https://github.com/tu_usuario/AgentSpeakNews.git
+   git clone https://github.com/brivaro/AgentSpeakNews.git
    cd AgentSpeakNews
