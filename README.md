@@ -17,8 +17,9 @@
 ### 💡 Overview
 **AgentSpeakNews** is a **multiagent system** implemented in Python using **SPADE**. The core idea is that a **coordinator agent (Agent 1)** handles a **search query** and distributes it to **specialized agents**, each monitoring different **RSS news feeds**. These agents search for relevant news articles matching the query and return their findings to the coordinator, which then compiles a **consolidated summary** for the user.  
 
-In addition, **ontologies** are used to **enhance communication** between agents, making the system more flexible and semantically aware. Used ontology --> http://dev.iptc.org/files/rNews/rnews_1.0_draft3_rdfxml.owl.
-Used feed news --> BBC, NYT, CNET 
+In addition, **ontologies** are used to **enhance communication** between agents, making the system more flexible and semantically aware. 
+- Used ontology --> http://dev.iptc.org/files/rNews/rnews_1.0_draft3_rdfxml.owl.
+- Used feed news --> BBC, NYT, CNET 
 
 ![image](https://github.com/user-attachments/assets/6ff0ba82-659b-4eb1-9e39-497534b8e8de)
 
