@@ -15,25 +15,48 @@
 ---
 
 ### 💡 Overview
-AgentSpeakNews es un sistema multiagente implementado en Python utilizando SPADE. La idea central es que un agente coordinador (Agente 1) se encarga de enviar una consulta de búsqueda a otros agentes especializados, cada uno consultando diferentes fuentes RSS de noticias. Cada agente busca en su feed aquellos artículos que contengan el término buscado y envía un resumen al coordinador, el cual presenta un resumen consolidado al usuario. ¡Y esto se puede ampliar fácilmente para incluir más fuentes o funcionalidades adicionales!
+**AgentSpeakNews** is a **multiagent system** implemented in Python using **SPADE**. The core idea is that a **coordinator agent (Agent 1)** handles a **search query** and distributes it to **specialized agents**, each monitoring different **RSS news feeds**. These agents search for relevant news articles matching the query and return their findings to the coordinator, which then compiles a **consolidated summary** for the user.  
+
+In addition, **ontologies** are used to **enhance communication** between agents, making the system more flexible and semantically aware. Used ontology --> http://dev.iptc.org/files/rNews/rnews_1.0_draft3_rdfxml.owl.
+Used feed news --> BBC, NYT, CNET 
 
 ![image](https://github.com/user-attachments/assets/6ff0ba82-659b-4eb1-9e39-497534b8e8de)
 
-### 🗳 Features
-- **Arquitectura Multiagente:** Coordinación entre múltiples agentes para distribuir la búsqueda de noticias.
-- **Búsqueda Dinámica:** Permite ingresar un término de búsqueda y cada agente responde con las noticias que coincidan.
-- **Integración con RSS:** Uso de `feedparser` para la lectura y análisis de feeds de noticias.
-- **Ontología para Noticias:** Utiliza `Owlready2` para gestionar una ontología (rNews) que puede enriquecer semánticamente la información (ampliable).
+---
 
-### 📌 Tecnologías Utilizadas
-- **Python** - Lenguaje principal de desarrollo.
-- **SPADE** - Framework para la creación de sistemas multiagente.
-- **Owlready2** - Biblioteca para manejo de ontologías.
-- **Feedparser** - Biblioteca para parsear feeds RSS.
+### 🗳 Features
+- **Multiagent Architecture:** Decentralized query processing using multiple agents.  
+- **Dynamic News Retrieval:** Users input a search term, and agents return relevant news from various sources.  
+- **RSS Feed Integration:** Agents fetch and analyze news articles using `feedparser`.  
+- **Ontology-Based Communication:** Agents leverage `Owlready2` to structure knowledge and enhance interoperability.  
+- **Easily Expandable:** New agents or additional knowledge structures can be integrated seamlessly.  
+
+---
+
+### 📌 Technologies Used
+- **Python** - Primary development language.  
+- **SPADE** - Framework for multiagent system implementation.  
+- **Owlready2** - Library for ontology management.  
+- **Feedparser** - RSS feed parser for retrieving news articles.  
+
+---
 
 ## 📖 Getting Started
 
-1. **Clonar el Repositorio:**
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/brivaro/AgentSpeakNews.git
    cd AgentSpeakNews
+2. Install Dependencies (conda environment with python 3.12.x):
+   ```bash
+   pip install spade owlready2 feedparser
+3. Run the Project with ipynb or python script. (Ensure your XMPP server is configured, and agent credentials are set up.)
+
+---
+
+### 🤖 Extensions & Future Improvements
+
+- **More Agents:** Add new agents for additional RSS sources.
+- **Enhanced Ontologies:** Expand the knowledge model for richer data representation.
+- **User Interface:** Implement a GUI for a more interactive experience.
+
